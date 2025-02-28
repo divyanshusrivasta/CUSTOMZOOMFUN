@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart-Style Image Zoom</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="row">
+        <!-- Main Image Section -->
+        <div class="col-md-4">
+            <div class="main-image-container">
+                <img id="mainImage" src="https://raw.githubusercontent.com/divyanshusrivasta/DSImagesCart/main/4775206e-c4f2-491c-bbe7-19e807bb6416.jpeg" 
+                    data-large="https://raw.githubusercontent.com/divyanshusrivasta/DSImagesCart/main/4775206e-c4f2-491c-bbe7-19e807bb6416.jpeg" 
+                    alt="Main Image">
+                <div class="zoom-lens"></div>
+            </div>
+
+            <!-- Thumbnail Images -->
+            <div class="small-images mt-3">
+                <img class="small-image" 
+                    src="https://raw.githubusercontent.com/divyanshusrivasta/DSImagesCart/main/4775206e-c4f2-491c-bbe7-19e807bb6416.jpeg" 
+                    data-image="https://raw.githubusercontent.com/divyanshusrivasta/DSImagesCart/main/4775206e-c4f2-491c-bbe7-19e807bb6416.jpeg" 
+                    alt="Thumb 1">
+                
+                <img class="small-image" 
+                    src="https://raw.githubusercontent.com/divyanshusrivasta/DSImagesCart/main/e5e93dff-aedc-4087-aaf2-e4e46a8ec641.jpeg" 
+                    data-image="https://raw.githubusercontent.com/divyanshusrivasta/DSImagesCart/main/e5e93dff-aedc-4087-aaf2-e4e46a8ec641.jpeg" 
+                    alt="Thumb 2">
+                
+                <img class="small-image" 
+                    src="https://raw.githubusercontent.com/divyanshusrivasta/DSImagesCart/main/1d4126ad-3064-457f-b41a-4efb4d67cd5b.jpeg" 
+                    data-image="https://raw.githubusercontent.com/divyanshusrivasta/DSImagesCart/main/1d4126ad-3064-457f-b41a-4efb4d67cd5b.jpeg" 
+                    alt="Thumb 3">
+            </div>
+        </div>
+
+        <!-- Zoomed Image Box -->
+        <div class="col-md-6">
+            <div class="zoom-box">
+                <img id="zoomedImage" src="https://raw.githubusercontent.com/divyanshusrivasta/DSImagesCart/main/4775206e-c4f2-491c-bbe7-19e807bb6416.jpeg" alt="Zoomed View">
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>

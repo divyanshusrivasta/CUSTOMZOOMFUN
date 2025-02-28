@@ -1,0 +1,62 @@
+.main-image-container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    height: 400px;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+
+#mainImage {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.zoom-lens {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid #999;
+    position: absolute;
+    display: none;
+}
+
+.zoom-box {
+    width: 100%;
+    max-width: 400px;
+    height: 400px;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    position: relative;
+    display: none; /* Hide on page load */
+}
+
+#zoomedImage {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transform-origin: center center;
+    transition: transform 0.1s ease;
+}
+
+.small-images {
+    display: flex;
+    gap: 10px;
+}
+
+.small-image {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #ddd;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.small-image:hover {
+    transform: scale(1.1);
+    border-color: #007bff;
+}
